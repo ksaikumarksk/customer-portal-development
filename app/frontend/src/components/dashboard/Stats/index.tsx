@@ -1,0 +1,2 @@
+type Props = { total: number; images: number; videos: number; documents: number }
+export function Stats({ total, images, videos, documents }: Props) { return <div className="stats-grid"><div><span>Total files</span><strong>{total}</strong></div><div><span>Images</span><strong>{images}</strong></div><div><span>Videos</span><strong>{videos}</strong></div><div><span>Documents</span><strong>{documents}</strong></div></div> }
