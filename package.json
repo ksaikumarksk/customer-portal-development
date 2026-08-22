@@ -4,8 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "concurrently -k \"npm run backend:dev\" \"npm run frontend:dev\"",
-    "build": "pnpm run frontend:build",
-    "start": "pnpm run backend:start",
+    "build": "npm run frontend:build",
+    "start": "npm run backend:start",
     "backend:dev": "tsx watch app/backend/src/server.ts",
     "backend:start": "tsx app/backend/src/server.ts",
     "frontend:dev": "vite --config app/frontend/vite.config.ts",
